@@ -159,7 +159,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* border: 1px solid gray; */
+    padding: 0 10px;
 }
 
 .chat-form .message-input {
