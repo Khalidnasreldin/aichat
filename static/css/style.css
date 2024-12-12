@@ -13,8 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: rgb(45,254,255);
-    background: radial-gradient(circle, rgba(45,254,255,1) 0%, rgba(0,0,0,1) 69%);
+    background-color: #000;
 }
 
 .chatbot {
@@ -23,6 +22,7 @@ body {
     overflow: hidden;
     border-radius: 10px;
     background-color: #000;
+    border: 1px solid #333;
 }
 
 .chat-header {
@@ -87,18 +87,20 @@ body {
     max-width: 80%;
     padding: 15px;
     font-size: 16px;
-    background-color: #222;
+    background-color: #111;
     border-radius: 5px;
 }
 
 .chat-body .bot-message .message-text {
     color: white;
     border-radius: 15px 15px 15px 0px;
+    border-left: 1px solid var(--primary);
 }
 
 .chat-body .user-message .message-text {
     color: var(--primary);
     border-radius: 15px 15px 0px 15px;
+    border-right: 1px solid var(--primary);
     background-color: #111;
 }
 
@@ -147,9 +149,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #111;
-    padding: 10px 30px;
-    border-bottom: 1px solid var(--primary);
+    border-top: 1px solid gray;
+    padding: 10px;
 }
 
 .chat-footer .chat-form {
@@ -158,14 +159,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* border: 1px solid gray; */
 }
 
 .chat-form .message-input {
     width: 80%;
     border: none;
     outline: none;
-    background-color: #111;
     color: #fff;
+    background-color: #000;
     resize: none;
     scrollbar-width: thin;
     scrollbar-color: var(--primary) transparent;
@@ -193,4 +195,11 @@ body {
 }
 .chat-form .message-input:valid~.chat-controls #send-message {
     display: block;
+}
+
+@media (max-width: 768px) {
+    .chatbot {
+        height: 95vh;
+        width: 95vw;
+    }
 }
