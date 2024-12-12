@@ -198,8 +198,12 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+    }
     .chatbot {
-        height: 95vh;
+        height: 90vh;
         width: 95vw;
+        margin-top: 10px;
     }
 }
