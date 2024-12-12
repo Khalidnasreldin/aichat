@@ -202,8 +202,8 @@ body {
         align-items: flex-start;
     }
     .chatbot {
-        height: 90vh;
-        width: 95vw;
+        height: 80vh;
+        width: 95vw;       
         margin-top: 10px;
     }
 }
