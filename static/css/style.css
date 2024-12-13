@@ -199,7 +199,7 @@ body {
 
 @media (max-width: 768px) {
     .chatbot {
-        height: 80vh;
+        height: 100vh;
         width: 95vw;       
         margin-top: 10px;
     }
