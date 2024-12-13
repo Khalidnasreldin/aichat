@@ -198,9 +198,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    body {
-        align-items: flex-start;
-    }
     .chatbot {
         height: 80vh;
         width: 95vw;       
